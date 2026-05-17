@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SEO Dashboard",
-  description: "Monitor and optimize your website's SEO performance",
+  title: "BGK Handy Services | Professional Roofing, Remodeling & Maintenance",
+  description: "BBB A+ Rated contractor providing premium roofing, remodeling, and maintenance services. Call now for a free quote.",
 };
 
 export default function RootLayout({
