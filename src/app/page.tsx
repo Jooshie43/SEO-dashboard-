@@ -39,13 +39,22 @@ function Header() {
             Contact
           </a>
         </nav>
-        <a
-          href="tel:+15551234567"
-          className="flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-        >
-          <Phone className="w-4 h-4" />
-          <span className="hidden sm:inline">Call Now</span>
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            href="tel:+15672848733"
+            className="flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+          >
+            <Phone className="w-4 h-4" />
+            <span className="hidden sm:inline">Call Now</span>
+          </a>
+          <a
+            href="sms:+15672848733?body=Hi%2C%20I%27d%20like%20to%20request%20a%20quote%20for%20your%20services."
+            className="flex items-center gap-2 border border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" />
+            <span className="hidden sm:inline">Text Us</span>
+          </a>
+        </div>
       </div>
     </header>
   );
@@ -75,15 +84,24 @@ function HeroSection() {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="tel:+15551234567"
+            href="tel:+15672848733"
             className="flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-all hover:scale-105"
           >
             <Phone className="w-5 h-5" />
-            Call Now: (555) 123-4567
+            Call Now: (567) 284-8733
           </a>
           <a
+            href="sms:+15672848733?body=Hi%2C%20I%27d%20like%20to%20request%20a%20quote%20for%20your%20services."
+            className="flex items-center gap-3 border border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/10 transition-all hover:scale-105"
+          >
+            <MessageCircle className="w-5 h-5" />
+            Text Us: (567) 284-8733
+          </a>
+        </div>
+        <div className="mt-4">
+          <a
             href="#contact"
-            className="flex items-center gap-2 border border-border text-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:bg-secondary transition-colors"
+            className="flex items-center justify-center gap-2 border border-border text-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:bg-secondary transition-colors"
           >
             Get Free Quote
           </a>
@@ -390,7 +408,7 @@ function ContactFormSection() {
 function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/15551234567?text=Hi%2C%20I%27d%20like%20to%20request%20a%20quote%20for%20your%20services."
+      href="https://wa.me/15672848733?text=Hi%2C%20I%27d%20like%20to%20request%20a%20quote%20for%20your%20services."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform hover:shadow-xl"
