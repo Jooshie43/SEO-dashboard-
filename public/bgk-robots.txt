@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemaps for bgkhandyservices.com
+Sitemap: https://bgkhandyservices.com/bgk-sitemap-index.xml
+Sitemap: https://bgkhandyservices.com/bgk-sitemap.xml
+Sitemap: https://bgkhandyservices.com/bgk-sitemap-pages.xml
+Sitemap: https://bgkhandyservices.com/bgk-sitemap-services.xml
+Sitemap: https://bgkhandyservices.com/bgk-sitemap-locations.xml
+Sitemap: https://bgkhandyservices.com/bgk-sitemap-blog.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow bot paths (optional)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
