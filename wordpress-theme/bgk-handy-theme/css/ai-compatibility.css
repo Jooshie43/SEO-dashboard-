@@ -1,0 +1,264 @@
+/* AI Compatibility & SEO Optimization */
+
+/* Semantic HTML5 Structure */
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+/* Schema.org & Structured Data Support */
+.breadcrumbs {
+    list-style: none;
+    padding: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs li::after {
+    content: '/';
+    margin-left: 0.5rem;
+    color: var(--text-light);
+}
+
+.breadcrumbs li:last-child::after {
+    content: '';
+}
+
+.breadcrumbs a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* Image Optimization for AI */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img[alt] {
+    /* AI tools look for alt text */
+    border: none;
+}
+
+/* Entity Recognition Support */
+.entity {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.person {
+    font-weight: 600;
+}
+
+.organization {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.location {
+    color: var(--dark-color);
+}
+
+/* Rich Snippet Support */
+.rating {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.review-count {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+/* Service & Product Schema */
+.service-item {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: var(--light-color);
+    border-left: 4px solid var(--primary-color);
+}
+
+.service-name {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.service-description {
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+.service-price {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* LocalBusiness Schema Support */
+.business-info {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.business-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.business-contact {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    min-width: 100px;
+}
+
+.contact-value {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-value:hover {
+    text-decoration: underline;
+}
+
+/* Contextual Links for SEO */
+.internal-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.3);
+    transition: border-color 0.3s ease;
+}
+
+.internal-link:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+.external-link {
+    color: var(--text-dark);
+    text-decoration: underline;
+}
+
+.external-link[rel="nofollow"]::after {
+    content: ' (external)';
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* Content Quality for NLP */
+.content-section {
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+
+.subsection {
+    margin: 1.5rem 0;
+}
+
+.key-point {
+    background: rgba(212, 165, 116, 0.05);
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    margin: 1rem 0;
+}
+
+/* Meta Information for Search Engines */
+.meta-info {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.meta-author,
+.meta-date,
+.meta-category {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* Image with Schema Markup */
+.image-with-caption {
+    margin: 1rem 0;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* FAQ Schema Support */
+.faq-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: 5px;
+}
+
+.faq-question {
+    font-weight: 600;
+    color: var(--dark-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-answer {
+    margin-top: 0.5rem;
+    color: var(--text-light);
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Mobile Readability */
+@media (max-width: 768px) {
+    .business-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .contact-method {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .meta-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
